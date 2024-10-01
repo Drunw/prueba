@@ -1,0 +1,40 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+        <head:HeaderOut xmlns:head="http://telefonica.com/globalIntegration/header">
+            <head:originator/>
+            <head:destination>$!exchange.properties.originator</head:destination>
+            <head:pid>$!exchange.properties.pid</head:pid>
+            <head:execId>$!exchange.properties.execId</head:execId>
+            <head:msgId>$!exchange.properties.esbMessageID</head:msgId>
+            <head:timestamp>$!exchange.properties.timeStamp</head:timestamp>
+            <head:msgType>ERROR</head:msgType>
+        </head:HeaderOut>
+    </soap:Header>
+    <soapenv:Body>
+        <soapenv:Fault 	xmlns:ns="http://telefonica.com/globalIntegration/OSB/common/errorMapping/v1">
+            <faultcode>soapenv:Server</faultcode>
+            <faultstring>server:$!exchange.properties.exceptionMessage:$!exchange.properties.errorCode</faultstring>
+            <faultactor>OSB-Node</faultactor>
+            <detail>
+                <ns3:MessageFault xmlns:ns3="http://telefonica.com/globalIntegration/fault">
+                    <ns3:exceptionCategory>server</ns3:exceptionCategory>
+                    <ns3:exceptionCode>$!exchange.properties.errorCode</ns3:exceptionCode>
+                    <ns3:exceptionMessage>$!exchange.properties.exceptionMessage</ns3:exceptionMessage>
+                    <ns3:exceptionDetail>$!exchange.properties.exceptionMessage:$!exchange.properties.errorCode</ns3:exceptionDetail>
+                    <ns3:exceptionSeverity>E</ns3:exceptionSeverity>
+                    <ns3:exceptionType>T-OpenAPI</ns3:exceptionType>
+                    <ns3:exceptionProtocol>
+                        <ns3:code>500</ns3:code>
+                        <ns3:description>INTERNAL SERVER ERROR</ns3:description>
+                    </ns3:exceptionProtocol>
+                    <ns3:appDetail>
+                        <ns3:exceptionAppCode>$!exchange.properties.errorCode</ns3:exceptionAppCode>
+                        <ns3:exceptionAppMessage/>
+                        <ns3:exceptionAppLocation>$!exchange.properties.routeId</ns3:exceptionAppLocation>
+                        <ns3:exceptionAppCause>$!exchange.properties.reason</ns3:exceptionAppCause>
+                    </ns3:appDetail>
+                </ns3:MessageFault>
+            </detail>
+        </soapenv:Fault>
+    </soapenv:Body>
+</soapenv:Envelope>

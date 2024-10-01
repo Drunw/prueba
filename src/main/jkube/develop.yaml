@@ -1,0 +1,153 @@
+apiVersion: template.openshift.io/v1
+kind: Template
+labels:
+  template: sodimac-java
+metadata:
+  annotations:
+    description: Apache Camel for Sodimac.
+    iconClass: icon-rh-integration
+    openshift.io/display-name: Sodimac Development with Apache Camel
+    openshift.io/provider-display-name: Sodimac.
+    tags: ApacheCamel
+    version: "1"
+  name: sodimac-camel
+  namespace: #{System.ProjectDev}#
+objects:
+  - apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      annotations:
+        app.openshift.io/vcs-ref: #{BRANCH_DEV}#
+        app.openshift.io/vcs-uri: #{System.Repo}#
+        sod.contacto-solucion: "Rodolfo Plazas rlopezp@homecenter.co"
+        sod.gerencia: #{Gerencia}#
+        sod.fecha-creacion: "17-09-2024"
+        sod.celula: #{Celula}#
+        sod.proyecto: "Migracion Fuse"
+        sod.ambiente: #{Ambiente}#
+        sod.descripcion-api: "Servicio de pruebas."
+        sod.aplicacion: #{System.ServiceName}#
+      generation: 3
+      labels:
+        app: #{System.ServiceName}#
+        app.kubernetes.io/component: #{System.ServiceName}#
+        app.kubernetes.io/instance: #{System.ServiceName}#
+        app.kubernetes.io/part-of: #{System.Application}#
+      name: #{System.ServiceName}#
+      namespace: #{System.ProjectDev}#
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: #{System.ServiceName}#
+          deployment: #{System.ServiceName}#
+      strategy:
+        activeDeadlineSeconds: 21600
+        resources: {}
+        rollingParams:
+          intervalSeconds: 1
+          maxSurge: 25%
+          maxUnavailable: 25%
+          timeoutSeconds: 120
+          updatePeriodSeconds: 1
+        type: RollingUpdate
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: #{System.ServiceName}#
+            deployment: #{System.ServiceName}#
+          annotations:
+            app.openshift.io/runtime: quarkus
+        spec:
+          containers:
+            - image: image-registry.openshift-image-registry.svc:5000/#{System.ProjectDev}#/#{System.ServiceName}#:#{Build.BuildId}#
+              env:
+                - name: POOL_SIZE_THREADS
+                  value: '#{POOL_SIZE_THREADS}#'
+                - name: MAX_POOL_SIZE_THREADS
+                  value: '#{MAX_POOL_SIZE_THREADS}#'
+                - name: KEEP_TIME_ALIVE_THREADS
+                  value: '#{KEEP_TIME_ALIVE_THREADS}#'
+                - name: LOGGING_NAME
+                  value: '#{LOGGING_NAME}#'
+                - name: TRACKING
+                  value: '#{TRACKING}#'
+                - name: MEMORY_REQUEST
+                  value: #{MEMORY_REQUEST}#
+                - name: CPU_REQUEST
+                  value: #{CPU_REQUEST}#
+                - name: MEMORY_LIMITS
+                  value: #{MEMORY_LIMITS}#
+                - name: CPU_LIMITS
+                  value: #{CPU_LIMITS}#
+              imagePullPolicy: Always
+              name: #{System.ServiceName}#
+              resources:
+               limits:
+                  cpu: #{CPU_LIMITS}#
+                  memory: #{MEMORY_LIMITS}#
+               requests:
+                  cpu: #{CPU_REQUEST}#
+                  memory: #{MEMORY_REQUEST}#
+              terminationMessagePath: /dev/termination-log
+              terminationMessagePolicy: File
+          dnsPolicy: ClusterFirst
+          restartPolicy: Always
+          schedulerName: default-scheduler
+          securityContext: {}
+          terminationGracePeriodSeconds: 30
+      test: false
+  - apiVersion: v1
+    kind: Service
+    metadata:
+      annotations:
+        app.openshift.io/vcs-ref: #{BRANCH_DEV}#
+        app.openshift.io/vcs-uri: #{System.Repo}#
+      labels:
+        app: #{System.ServiceName}#
+        app.kubernetes.io/component: #{System.ServiceName}#
+        app.kubernetes.io/instance: #{System.ServiceName}#
+        app.kubernetes.io/part-of: #{System.ServiceName}#
+      name: #{System.ServiceName}#
+      namespace: #{System.ProjectDev}#
+    spec:
+      ports:
+        - name: 8080-tcp
+          port: 8080
+          protocol: TCP
+          targetPort: 8080
+      selector:
+        app: #{System.ServiceName}#
+        deployment: #{System.ServiceName}#
+      sessionAffinity: None
+      type: ClusterIP
+  - apiVersion: v1
+    kind: Route
+    metadata:
+      annotations:
+        app.openshift.io/vcs-ref: #{BRANCH_DEV}#
+        app.openshift.io/vcs-uri: #{System.Repo}#
+        openshift.io/host.generated: "true"
+        haproxy.router.openshift.io/timeout: 300000ms
+        haproxy.router.openshift.io/hsts_header: max-age=31536000
+      labels:
+        app: #{System.ServiceName}#
+        app.kubernetes.io/component: #{System.ServiceName}#
+        app.kubernetes.io/instance: #{System.ServiceName}#
+        app.kubernetes.io/part-of: #{System.ServiceName}#
+      name: #{System.ServiceName}#
+      namespace: #{System.ProjectDev}#
+    spec:
+      host: #{System.ServiceName}#-#{System.ProjectDev}#.apps.openshiftqa.sodimacpr.corp
+      port:
+        targetPort: 8080-tcp
+      subdomain: ""
+      to:
+        kind: Service
+        name: #{System.ServiceName}#
+        weight: 100
+      tls:
+        termination: edge
+        insecureEdgeTerminationPolicy: Redirect
+      wildcardPolicy: None

@@ -1,0 +1,8 @@
+<soapenv:Body xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <ns1:searchAccountByResource xmlns:ns1="http://www.kruger.com.ec">
+        <ns1:arg0>
+            <parameterType>$!{exchange.properties.info2}</parameterType>
+            <parameterValue>$!{exchange.properties.userId}</parameterValue>
+        </ns1:arg0>
+    </ns1:searchAccountByResource>
+</soapenv:Body>

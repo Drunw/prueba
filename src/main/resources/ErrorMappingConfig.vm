@@ -1,0 +1,23 @@
+#if($exchange.properties.errorMappingConfig)
+<ns:errorMappingConfig>
+    <ns:customEror>true</ns:customEror>
+    <ns:errorName>T-OpenAPI</ns:errorName>
+    <ns:defaultError>SVR1000</ns:defaultError>
+    <ns:osbDvmPath>ArchitectureServices/common/DVM/internal_osb_error_codes_T-OpenAPI</ns:osbDvmPath>
+    <ns:commonDvmPath>OpenId-RetrieveUserProfile/common/DVM/OpenId-RetrieveUserProfile_T-OpenAPI_ERROR_CODES</ns:commonDvmPath>
+    <ns:appDvmPath>OpenId-RetrieveUserProfile/OpenId-RetrieveUserProfileDSGO/DVM/Backend_T-OpenAPI_ERROR_CODES</ns:appDvmPath>
+    <ns:osbMappingXQueryPath>ArchitectureServices/ErrorMappingService/Specifications/Transformations/XQuery/generateNormalizedOSBFault_T-OpenAPI</ns:osbMappingXQueryPath>
+    <ns:appMappingXQueryPath>ArchitectureServices/ErrorMappingService/Specifications/Transformations/XQuery/generateNormalizedFault_T-OpenAPI</ns:appMappingXQueryPath>
+</ns:errorMappingConfig>
+#else
+<ns:errorMappingConfig>
+    <ns:customEror>false</ns:customEror>
+    <ns:errorName>default</ns:errorName>
+    <ns:defaultError>4001</ns:defaultError>
+    <ns:osbDvmPath>ArchitectureServices/common/DVM/internal_osb_error_codes</ns:osbDvmPath>
+    <ns:commonDvmPath>ArchitectureServices/common/DVM/fmk_common_error_codes</ns:commonDvmPath>
+    <ns:appDvmPath>""</ns:appDvmPath>
+    <ns:osbMappingXQueryPath>ArchitectureServices/ErrorMappingService/Specifications/Transformations/XQuery/generateNormalizedOSBFault_v1</ns:osbMappingXQueryPath>
+    <ns:appMappingXQueryPath>ArchitectureServices/ErrorMappingService/Specifications/Transformations/XQuery/generateNormalizedFault</ns:appMappingXQueryPath>
+</ns:errorMappingConfig>
+#end

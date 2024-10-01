@@ -1,0 +1,57 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header>
+        <head:HeaderOut xmlns:head="http://telefonica.com/globalIntegration/header">
+            <head:originator/>
+            <head:destination>$!exchange.properties.originator</head:destination>
+            <head:pid>$!exchange.properties.pid</head:pid>
+            <head:execId>$!exchange.properties.execId</head:execId>
+            <head:msgId>$!exchange.properties.esbMessageID</head:msgId>
+            <head:timestamp>$!exchange.properties.timeStamp</head:timestamp>
+            <head:msgType>RESPONSE</head:msgType>
+        </head:HeaderOut>
+    </soapenv:Header>
+    <soapenv:Body>
+        <v1:retrieveUserProfileResponse xmlns:v1="http://telefonica.com/globalIntegration/services/OpenId-RetrieveUserProfile/v1">
+            <v1:sub>$!exchange.properties.userLogin</v1:sub>
+            <v1:name>$!exchange.properties.firstName $!exchange.properties.lastName</v1:name>
+            <v1:given_name>$!exchange.properties.firstName</v1:given_name>
+            <v1:family_name>$!exchange.properties.lastName</v1:family_name>
+            <v1:email>$!exchange.properties.email</v1:email>
+            <v1:gender>$!exchange.properties.genderCode</v1:gender>
+            <v1:birthdate>$!exchange.properties.birthdate</v1:birthdate>
+            <v1:legalId>
+                <v1:country>PE</v1:country>
+                <v1:isPrimary>true</v1:isPrimary>
+                <v1:nationalID>$!exchange.properties.nationalID</v1:nationalID>
+                <v1:nationalIDType>$!exchange.properties.primaryIdTypeTitle</v1:nationalIDType>
+            </v1:legalId>
+            <v1:userAssets>
+                <v1:id>$!exchange.properties.customerNo</v1:id>
+                <v1:idFormat>undefined</v1:idFormat>
+                <v1:entityType>customer</v1:entityType>
+            </v1:userAssets>
+            <v1:userAssets>
+                <v1:id>$!exchange.properties.accountNo</v1:id>
+                <v1:idFormat>undefined</v1:idFormat>
+                <v1:entityType>account</v1:entityType>
+            </v1:userAssets>
+            #if($exchange.properties.statusCode == "clfy_Active")
+            <v1:userAssets>
+                <v1:id>$!exchange.properties.msisdn</v1:id>
+                <v1:idFormat>telnumber</v1:idFormat>
+                <v1:entityType>product</v1:entityType>
+                <v1:assetType>mobile control</v1:assetType>
+                <v1:role>user</v1:role>
+            </v1:userAssets>
+            #else
+            #end
+            <v1:userAssets>
+                <v1:id>$!exchange.properties.userLogin</v1:id>
+                <v1:idFormat>undefined</v1:idFormat>
+                <v1:entityType>product</v1:entityType>
+                <v1:assetType>email</v1:assetType>
+                <v1:role>user</v1:role>
+                </v1:userAssets>
+        </v1:retrieveUserProfileResponse>
+    </soapenv:Body>
+</soapenv:Envelope>

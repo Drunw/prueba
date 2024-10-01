@@ -1,0 +1,12 @@
+<serviceInfo>  
+      <serviceVersion>1.0</serviceVersion>
+      <errorMappingConfig
+        name="T-OpenAPI"
+        defaultError="SVR1000"
+        commonDvmPath="OpenId-RetrieveUserProfile/common/DVM/OpenId-RetrieveUserProfile_T-OpenAPI_ERROR_CODES"
+        appDvmPath="OpenId-RetrieveUserProfile/OpenId-RetrieveUserProfileDSGO/DVM/Backend_T-OpenAPI_ERROR_CODES"
+      />
+      <enableValidation>false</enableValidation>
+      <enableFMKTrace>false</enableFMKTrace>
+      <enableAppTrace>false</enableAppTrace>
+</serviceInfo>

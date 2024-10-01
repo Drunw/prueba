@@ -1,0 +1,37 @@
+<ns2:EsbTraceMessage xmlns:ns2="http://telefonica.com/peru/esb/trace" xmlns:ns3="http://telefonica.pe/TefError/V1">
+    <ns2:catalogId>109</ns2:catalogId>
+    <ns2:referenceId></ns2:referenceId>
+    <ns2:parentId>$!exchange.properties.esbMessageID</ns2:parentId>
+    <ns2:transactionId>$!exchange.properties.esbMessageID</ns2:transactionId>
+    <ns2:x-correlator></ns2:x-correlator>
+    <ns2:environment>OSB_DIVER_BALANCEMNG</ns2:environment>
+    <ns2:application>$!exchange.properties.serviceChannel</ns2:application>
+    <ns2:serviceName>Open Id</ns2:serviceName>
+    <ns2:operationName>retrieveUserProfile</ns2:operationName>
+    <ns2:returnCode>OK</ns2:returnCode>
+    <ns2:returnDescription>Succesfull execution</ns2:returnDescription>
+    <ns2:traceInformation>
+        <ns3:service>5000</ns3:service>
+        <ns3:operation>0001</ns3:operation>
+        <ns3:layer>Open Id</ns3:layer>
+        <ns3:tamSystem></ns3:tamSystem>
+        <ns3:legacySystem></ns3:legacySystem>
+        <ns3:api></ns3:api>
+        <ns3:error>OK</ns3:error>
+    </ns2:traceInformation>
+    <ns2:messageContext>
+        <ns2:serviceMessage>$!exchange.properties.inputBodyXml</ns2:serviceMessage>
+        <ns2:telefonicaRequest>
+            <ns2:userLogin>$!exchange.properties.userLogin</ns2:userLogin>
+            <ns2:serviceChannel>$!exchange.properties.serviceChannel</ns2:serviceChannel>
+            <ns2:sessionCode></ns2:sessionCode>
+            <ns2:application>$!exchange.properties.application</ns2:application>
+            <ns2:idMessage>$!exchange.properties.idMessage</ns2:idMessage>
+            <ns2:ipAddress>$!exchange.properties.ipAddress</ns2:ipAddress>
+            <ns2:functionalityCode>$!exchange.properties.functionalityCode</ns2:functionalityCode>
+            <ns2:transactionTimestamp>$!exchange.properties.timeStamp</ns2:transactionTimestamp>
+            <ns2:serviceName>$!exchange.properties.sserviceName</ns2:serviceName>
+            <ns2:version>V1</ns2:version>
+        </ns2:telefonicaRequest>
+    </ns2:messageContext>
+</ns2:EsbTraceMessage>

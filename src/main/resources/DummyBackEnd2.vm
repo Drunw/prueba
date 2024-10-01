@@ -1,0 +1,459 @@
+<S:Body xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <ns1:getAccountListResponse xmlns:ns1="http://www.kruger.com.ec/CustomerServices">
+        <ns1:return>
+            <accountBillingInfo>
+                <billingCurrency>PEN</billingCurrency>
+                <taxExemptionDate xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <taxExemptionIndicator>78</taxExemptionIndicator>
+            </accountBillingInfo>
+            <accountBusinessEntityIdInfo>
+                <businessEntityId>0</businessEntityId>
+            </accountBusinessEntityIdInfo>
+            <accountCollectionInfo>
+                <accountCollectionDateInfo>
+                    <collectionInd>89</collectionInd>
+                    <collectionStartDate xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </accountCollectionDateInfo>
+                <accountCollectionFixInfo>
+                    <collectionFixCsrCd xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <collectionFixPolicy xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <collectionPermanentWaiveInd>89</collectionPermanentWaiveInd>
+                    <l9Source xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </accountCollectionFixInfo>
+                <collectionStatus>NONE</collectionStatus>
+                <fullSuspensionIndicator>64</fullSuspensionIndicator>
+                <l3SuspensionRsn>NONE</l3SuspensionRsn>
+                <suspensionType xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </accountCollectionInfo>
+            <accountGeneralInfo>
+                <l3AccountStatusInfo>
+                    <l3AccountStatus>79</l3AccountStatus>
+                    <l3StsChngDate>2022-11-08T19:25:38-05:00</l3StsChngDate>
+                    <l3StsReasonCd>CREQ</l3StsReasonCd>
+                </l3AccountStatusInfo>
+                <lastUpdateDate xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <openDate>2022-11-03T19:37:16-05:00</openDate>
+            </accountGeneralInfo>
+            <accountIdInfo>
+                <accountNo>735039624</accountNo>
+            </accountIdInfo>
+            <accountingManagementInfo>
+                <accountingBalancePolicy>66</accountingBalancePolicy>
+                <documentType>66</documentType>
+                <l9CompanyInd>78</l9CompanyInd>
+                <l9LOBInd xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </accountingManagementInfo>
+            <addressInfo>
+                <addressElement1>AV</addressElement1>
+                <addressElement10>4</addressElement10>
+                <addressElement11>EL TRIUNFO</addressElement11>
+                <addressElement12 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressElement13 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressElement14 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressElement15>SAN JUAN DE MIRAFLORES</addressElement15>
+                <addressElement2 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressElement3>01</addressElement3>
+                <addressElement4>15</addressElement4>
+                <addressElement5 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressElement6>PE</addressElement6>
+                <addressElement7>UR</addressElement7>
+                <addressElement8>UMAMARCA</addressElement8>
+                <addressElement9>X</addressElement9>
+                <addressLine1>AV</addressLine1>
+                <addressLine2 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressLine3 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressLine4 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressType>81</addressType>
+                <addressUpdateType>64</addressUpdateType>
+                <effectiveDate>2022-12-20T21:23:27-05:00</effectiveDate>
+                <expirationDate xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <l9AddressElement16>150133</l9AddressElement16>
+                <l9AddressElement17 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <l9AddressElement18 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <l9AddressElement19>33</l9AddressElement19>
+                <l9AddressElement20>LIMA</l9AddressElement20>
+                <linkType>65</linkType>
+                <sinceDate xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <validityCode>64</validityCode>
+                <verificationInd>64</verificationInd>
+            </addressInfo>
+            <customerIdInfo>
+                <customerNo>55461855</customerNo>
+            </customerIdInfo>
+            <externalIdInfo>
+                <externalId xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </externalIdInfo>
+            <nameAddressInfoList>
+                <addressInfo>
+                    <addressElement1>AV</addressElement1>
+                    <addressElement10>4</addressElement10>
+                    <addressElement11>EL TRIUNFO</addressElement11>
+                    <addressElement12 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressElement13 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressElement14 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressElement15>SAN JUAN DE MIRAFLORES</addressElement15>
+                    <addressElement2 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressElement3>01</addressElement3>
+                    <addressElement4>15</addressElement4>
+                    <addressElement5 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressElement6>PE</addressElement6>
+                    <addressElement7>UR</addressElement7>
+                    <addressElement8>UMAMARCA</addressElement8>
+                    <addressElement9>X</addressElement9>
+                    <addressLine1>AV</addressLine1>
+                    <addressLine2 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressLine3 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressLine4 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressType>81</addressType>
+                    <addressUpdateType>64</addressUpdateType>
+                    <effectiveDate>2022-12-20T21:23:27-05:00</effectiveDate>
+                    <expirationDate xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <l9AddressElement16>150133</l9AddressElement16>
+                    <l9AddressElement17 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <l9AddressElement18 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <l9AddressElement19>33</l9AddressElement19>
+                    <l9AddressElement20>LIMA</l9AddressElement20>
+                    <linkType>65</linkType>
+                    <sinceDate xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <validityCode>64</validityCode>
+                    <verificationInd>64</verificationInd>
+                </addressInfo>
+                <addressNameLinkInfo>
+                    <linkType>65</linkType>
+                </addressNameLinkInfo>
+                <nameInfo>
+                    <effectiveDate>2022-12-20T21:23:27-05:00</effectiveDate>
+                    <expirationDate xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <l9NameElement11>giancarlo258@hotmail.com</l9NameElement11>
+                    <l9NameElement12>DNI</l9NameElement12>
+                    <l9NameElement13>47463426</l9NameElement13>
+                    <l9NameElement14 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <l9NameElement15 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <l9NameElement16 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <l9NameElement17 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <linkType>65</linkType>
+                    <nameElement1 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nameElement10 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nameElement2>GIANCARLO PAUL</nameElement2>
+                    <nameElement3>TINOCO HINOSTROZA</nameElement3>
+                    <nameElement4 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nameElement5>16/11/1991 00:00:00</nameElement5>
+                    <nameElement6 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nameElement7 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nameElement8>Single</nameElement8>
+                    <nameElement9>Y</nameElement9>
+                    <nameLine1>GIANCARLO PAUL TINOCO HINOSTROZA</nameLine1>
+                    <nameLine2>16/11/1991 00:00:00</nameLine2>
+                    <nameType>81</nameType>
+                    <nameUpdateType>64</nameUpdateType>
+                </nameInfo>
+            </nameAddressInfoList>
+            <nameInfo>
+                <effectiveDate>2022-12-20T21:23:27-05:00</effectiveDate>
+                <expirationDate xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <l9NameElement11>giancarlo258@hotmail.com</l9NameElement11>
+                <l9NameElement12>DNI</l9NameElement12>
+                <l9NameElement13>47463426</l9NameElement13>
+                <l9NameElement14 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <l9NameElement15 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <l9NameElement16 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <l9NameElement17 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <linkType>65</linkType>
+                <nameElement1 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <nameElement10 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <nameElement2>GIANCARLO PAUL</nameElement2>
+                <nameElement3>TINOCO HINOSTROZA</nameElement3>
+                <nameElement4 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <nameElement5>16/11/1991 00:00:00</nameElement5>
+                <nameElement6 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <nameElement7 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <nameElement8>Single</nameElement8>
+                <nameElement9>Y</nameElement9>
+                <nameLine1>GIANCARLO PAUL TINOCO HINOSTROZA</nameLine1>
+                <nameLine2>16/11/1991 00:00:00</nameLine2>
+                <nameType>81</nameType>
+                <nameUpdateType>64</nameUpdateType>
+            </nameInfo>
+        </ns1:return>
+        <ns1:return>
+            <accountBillingInfo>
+                <billingCurrency>PEN</billingCurrency>
+                <taxExemptionDate xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <taxExemptionIndicator>78</taxExemptionIndicator>
+            </accountBillingInfo>
+            <accountBusinessEntityIdInfo>
+                <businessEntityId>0</businessEntityId>
+            </accountBusinessEntityIdInfo>
+            <accountCollectionInfo>
+                <accountCollectionDateInfo>
+                    <collectionInd>89</collectionInd>
+                    <collectionStartDate xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </accountCollectionDateInfo>
+                <accountCollectionFixInfo>
+                    <collectionFixCsrCd xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <collectionFixPolicy xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <collectionPermanentWaiveInd>64</collectionPermanentWaiveInd>
+                    <l9Source xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </accountCollectionFixInfo>
+                <collectionStatus>NONE</collectionStatus>
+                <fullSuspensionIndicator>64</fullSuspensionIndicator>
+                <l3SuspensionRsn>NONE</l3SuspensionRsn>
+                <suspensionType xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </accountCollectionInfo>
+            <accountGeneralInfo>
+                <l3AccountStatusInfo>
+                    <l3AccountStatus>78</l3AccountStatus>
+                    <l3StsChngDate>2024-03-14T22:27:08-05:00</l3StsChngDate>
+                    <l3StsReasonCd>CREQ</l3StsReasonCd>
+                </l3AccountStatusInfo>
+                <lastUpdateDate xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <openDate>2017-08-15T00:00:00-05:00</openDate>
+            </accountGeneralInfo>
+            <accountIdInfo>
+                <accountNo>103942198</accountNo>
+            </accountIdInfo>
+            <accountingManagementInfo>
+                <accountingBalancePolicy>66</accountingBalancePolicy>
+                <documentType>66</documentType>
+                <l9CompanyInd>78</l9CompanyInd>
+                <l9LOBInd>WRLS</l9LOBInd>
+            </accountingManagementInfo>
+            <addressInfo>
+                <addressElement1>AV</addressElement1>
+                <addressElement10>4</addressElement10>
+                <addressElement11>EL TRIUNFO</addressElement11>
+                <addressElement12 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressElement13 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressElement14 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressElement15>SAN JUAN DE MIRAFLORES</addressElement15>
+                <addressElement2 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressElement3>01</addressElement3>
+                <addressElement4>15</addressElement4>
+                <addressElement5 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressElement6>PE</addressElement6>
+                <addressElement7>UR</addressElement7>
+                <addressElement8>UMAMARCA</addressElement8>
+                <addressElement9>X</addressElement9>
+                <addressLine1>AV</addressLine1>
+                <addressLine2 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressLine3 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressLine4 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <addressType>81</addressType>
+                <addressUpdateType>64</addressUpdateType>
+                <effectiveDate>2022-12-20T21:23:27-05:00</effectiveDate>
+                <expirationDate xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <l9AddressElement16>150133</l9AddressElement16>
+                <l9AddressElement17 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <l9AddressElement18 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <l9AddressElement19>33</l9AddressElement19>
+                <l9AddressElement20>LIMA</l9AddressElement20>
+                <linkType>65</linkType>
+                <sinceDate xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <validityCode>64</validityCode>
+                <verificationInd>64</verificationInd>
+            </addressInfo>
+            <customerIdInfo>
+                <customerNo>55461855</customerNo>
+            </customerIdInfo>
+            <externalIdInfo>
+                <externalId>103942198</externalId>
+            </externalIdInfo>
+            <nameAddressInfoList>
+                <addressInfo>
+                    <addressElement1>AV</addressElement1>
+                    <addressElement10>4</addressElement10>
+                    <addressElement11>EL TRIUNFO</addressElement11>
+                    <addressElement12 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressElement13 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressElement14 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressElement15>SAN JUAN DE MIRAFLORES</addressElement15>
+                    <addressElement2 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressElement3>01</addressElement3>
+                    <addressElement4>15</addressElement4>
+                    <addressElement5 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressElement6>PE</addressElement6>
+                    <addressElement7>UR</addressElement7>
+                    <addressElement8>UMAMARCA</addressElement8>
+                    <addressElement9>X</addressElement9>
+                    <addressLine1>AV</addressLine1>
+                    <addressLine2 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressLine3 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressLine4 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <addressType>81</addressType>
+                    <addressUpdateType>64</addressUpdateType>
+                    <effectiveDate>2022-12-20T21:23:27-05:00</effectiveDate>
+                    <expirationDate xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <l9AddressElement16>150133</l9AddressElement16>
+                    <l9AddressElement17 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <l9AddressElement18 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <l9AddressElement19>33</l9AddressElement19>
+                    <l9AddressElement20>LIMA</l9AddressElement20>
+                    <linkType>65</linkType>
+                    <sinceDate xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <validityCode>64</validityCode>
+                    <verificationInd>64</verificationInd>
+                </addressInfo>
+                <addressNameLinkInfo>
+                    <linkType>65</linkType>
+                </addressNameLinkInfo>
+                <nameInfo>
+                    <effectiveDate>2022-12-20T21:23:27-05:00</effectiveDate>
+                    <expirationDate xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <l9NameElement11>giancarlo258@hotmail.com</l9NameElement11>
+                    <l9NameElement12>DNI</l9NameElement12>
+                    <l9NameElement13>47463426</l9NameElement13>
+                    <l9NameElement14 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <l9NameElement15 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <l9NameElement16 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <l9NameElement17 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <linkType>65</linkType>
+                    <nameElement1 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nameElement10 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nameElement2>GIANCARLO PAUL</nameElement2>
+                    <nameElement3>TINOCO HINOSTROZA</nameElement3>
+                    <nameElement4 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nameElement5>16/11/1991 00:00:00</nameElement5>
+                    <nameElement6 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nameElement7 xsi:nil="true"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <nameElement8>Single</nameElement8>
+                    <nameElement9>Y</nameElement9>
+                    <nameLine1>GIANCARLO PAUL TINOCO HINOSTROZA</nameLine1>
+                    <nameLine2>16/11/1991 00:00:00</nameLine2>
+                    <nameType>81</nameType>
+                    <nameUpdateType>64</nameUpdateType>
+                </nameInfo>
+            </nameAddressInfoList>
+            <nameInfo>
+                <effectiveDate>2022-12-20T21:23:27-05:00</effectiveDate>
+                <expirationDate xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <l9NameElement11>giancarlo258@hotmail.com</l9NameElement11>
+                <l9NameElement12>DNI</l9NameElement12>
+                <l9NameElement13>47463426</l9NameElement13>
+                <l9NameElement14 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <l9NameElement15 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <l9NameElement16 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <l9NameElement17 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <linkType>65</linkType>
+                <nameElement1 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <nameElement10 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <nameElement2>GIANCARLO PAUL</nameElement2>
+                <nameElement3>TINOCO HINOSTROZA</nameElement3>
+                <nameElement4 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <nameElement5>16/11/1991 00:00:00</nameElement5>
+                <nameElement6 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <nameElement7 xsi:nil="true"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <nameElement8>Single</nameElement8>
+                <nameElement9>Y</nameElement9>
+                <nameLine1>GIANCARLO PAUL TINOCO HINOSTROZA</nameLine1>
+                <nameLine2>16/11/1991 00:00:00</nameLine2>
+                <nameType>81</nameType>
+                <nameUpdateType>64</nameUpdateType>
+            </nameInfo>
+        </ns1:return>
+    </ns1:getAccountListResponse>
+</S:Body>

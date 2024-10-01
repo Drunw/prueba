@@ -1,0 +1,6 @@
+<ns2:findCaller xmlns:ns2="http://x3FindCallerServices.findcaller.webservice.crm.crmphd.com">
+  <Request>
+    <ownerContactPrimaryId>$!exchange.properties.userId</ownerContactPrimaryId>
+    <ownerContactPrimaryType>$!exchange.properties.info2</ownerContactPrimaryType>
+  </Request>
+</ns2:findCaller>

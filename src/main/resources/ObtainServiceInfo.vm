@@ -1,0 +1,34 @@
+<esb:EsbServiceContext xmlns:esb="http://telefonica.com/peru/esb/context" xmlns:ns1="http://telefonica.com/peru" xmlns:tfnResp="http://telefonica.pe/TefResponseHeader/V1">
+      <esb:serviceInformation>
+        <esb:serviceInfo>
+          <ns1:ServiceId>5000</ns1:ServiceId>
+          <ns1:InternalId>5001</ns1:InternalId>
+          <ns1:ServiceName>Open Id</ns1:ServiceName>
+          <ns1:OperationId>0001</ns1:OperationId>
+          <ns1:OperationName>retrieveUserProfile</ns1:OperationName>
+          <ns1:Version>1.0</ns1:Version>
+          <ns1:TraceLevel>DEBUG</ns1:TraceLevel>
+          <ns1:Status>1</ns1:Status>
+          <ns1:InputValidation>false</ns1:InputValidation>
+          <ns1:OutputValidation>false</ns1:OutputValidation>
+          <ns1:InternalSimulator>NONE</ns1:InternalSimulator>
+          <ns1:ValidateExitCode>false</ns1:ValidateExitCode>
+          <ns1:ExitCode>0</ns1:ExitCode>
+          <ns1:CurrentAPI></ns1:CurrentAPI>
+          <ns1:UserReference></ns1:UserReference>
+        </esb:serviceInfo>
+      </esb:serviceInformation>
+      <esb:requestHeader>
+      $!exchange.properties.TefHeaderReq
+      </esb:requestHeader>
+      <esb:responseHeader>
+        <tfnResp:TefHeaderRes>
+          <tfnResp:TefHeaderRes>
+            <tfnResp:idMessage></tfnResp:idMessage>
+            <tfnResp:serviceName>$!exchange.properties.serviceName</tfnResp:serviceName>
+            <tfnResp:responseDateTime></tfnResp:responseDateTime>
+            <tfnResp:transactionID>$!exchange.properties.esbMessageID</tfnResp:transactionID>
+          </tfnResp:TefHeaderRes>
+        </tfnResp:TefHeaderRes>
+      </esb:responseHeader>
+</esb:EsbServiceContext>
